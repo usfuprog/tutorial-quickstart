@@ -1,0 +1,79 @@
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    body
+    {
+/*        margin-top: 10px;*/
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+        height: 100%;
+    }
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #badbad;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {
+          height:auto;
+      } 
+    }
+
+ #menulatte
+ {
+     font-weight: bold;
+     text-align: left;
+     color: #555;
+ }
+ 
+ h1
+ {
+     color: BurlyWood;
+     font-style: italic;
+     font-family: "Segoe Script", "Verdana", serif;
+ }
+ body
+ {
+     background-color: #f0ead8;
+ }
+ 
+ #mainTable
+ {
+     border-spasing: 10px;
+     width: 100%;
+ }
+ 
+ #mainTable td
+ {
+    border: 1px double grey;
+    padding: 10px;
+ }
+ 
+ #booksImg
+ {
+     margin-top: 100px;
+ }
+ #booksImg img
+ {
+     width: 200px;
+ }

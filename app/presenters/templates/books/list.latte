@@ -1,0 +1,12 @@
+{* Latte template *}
+{layout '../layout.latte'}
+
+{block content}
+<table>
+    <tr n:foreach='$books as $book'>
+        <td>{$book->name}</td>
+        <td>{$book->date|date:'F j, Y'}</td>
+    </tr>
+</table>
+{/block}
+
