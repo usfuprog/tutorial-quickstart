@@ -1,0 +1,10 @@
+<ul>
+    <li><a href="/Book/Index" >Search books</a></li>
+    
+    {if isset($_SESSION['user'])}
+    <li><a href="/Book/Add" >Add book</a></li>
+    <p>_____________________</p>
+    Login: [{$_SESSION['user']->login}]<br />
+    {/if}
+    
+</ul>
