@@ -66,8 +66,12 @@
             </a>
             
         {else}
-            <a n:href="Sign:form" class="preventDefault ajax">
+            <a n:href="update!" class="ajax">
                 <span class="glyphicon glyphicon-log-in"></span>&nbsp&nbspLogin
+                
+                {snippet script}
+                    {if isset($callModal)}<script>eval({$callModal});</script>{/if}
+                {/snippet}
             </a>
         {/if}
             
@@ -91,7 +95,7 @@
         <img src="{$basePath}/images/small.jpg" alt="books" />
     </div>
     </div>
-    <div class="col-sm-8 text-left">
+    <div class="col-sm-10 text-left">
         <h1>Library website</h1>
         
         <?php
@@ -112,12 +116,7 @@
   <p>Footer Text</p>
 </footer>
 
-
-
-
-
-
-
+{include 'Sign/form.latte'}
 	
 
 

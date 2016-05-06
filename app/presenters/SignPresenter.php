@@ -38,5 +38,18 @@ class SignPresenter extends BasePresenter
                 $this->redrawControl('login');
             }
         }
-
+        
+        
+        public function renderForm()
+        {
+//            \Tracy\Debugger::log($this->template);
+//            $latte = new \Latte\Engine;
+//            $callModal = '===';
+//            $latte->render('layout.latte', $callModal);
+            $this->template->callModal = 'zzz';
+            $this->callModal = 'zzz';
+            $this->redrawControl('script');
+            if ($this->filter)
+                \Tracy\Debugger::log($this->template);
+        }
 }

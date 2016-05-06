@@ -143,4 +143,11 @@ class BooksPresenter extends BasePresenter
         public function filterBooksSucceeded($form, $values) {
             $this->filter = $values;
         }
+        
+        public function handleUpdate()
+        {
+            if ($this->isAjax())
+                $this->template->callModal = "dialog.dialog( 'open' );      $(wrapper).parent().css('top', '24%');";
+            $this->redrawControl('script');
+        }
 }
