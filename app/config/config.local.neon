@@ -2,7 +2,7 @@ parameters:
 
 
 database:
-	dsn: 'mysql:host=127.0.0.1;dbname=Library'
+	dsn: 'mysql:host=127.0.0.1;dbname=library_20200422'
 	user: 'root'
 	password: ''
 	options:
